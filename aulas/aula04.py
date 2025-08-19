@@ -1,5 +1,9 @@
 frutas = ["banana", "manga", "laranja", "jaca", "jaca"]
 
+# frutas = ["banana", "manga", "laranja", "jaca", ["sal", "pimenta"]]
+# frutas[-1][-1] = "pimenta_reino"
+# print(frutas)
+
 # salada_de_fruta = frutas
 # print(frutas)
 # print(salada_de_fruta)
@@ -37,8 +41,8 @@ temperos = ["pimenta", "sal"]
 # print(salada_de_fruta)
 
 salada_de_fruta = ["maça"]
-print(frutas)
-print(frutas.index("laranja"))
+# print(frutas)
+# print(frutas.index("laranja"))
 
 #for fruta in frutas:
 #    salada_de_fruta.append(fruta)
