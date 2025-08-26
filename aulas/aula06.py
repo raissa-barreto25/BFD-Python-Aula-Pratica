@@ -3,14 +3,14 @@
 # print(type(dicionario_vazio))
 # print(dicionario_vazio)
 
-# dicionario = {
-#     "id": 0,
-#     "Nome": "Raíssa",
-#     "Idade": 30,
-#     "Nacionalidade": "Brasileira",
-#     "Rico": False,
-#     "Filmes Favoritos" : "Harry Potter"
-# }
+dicionario = {
+    "id": 0,
+    "Nome": "Raíssa",
+    "Idade": 30,
+    "Nacionalidade": "Brasileira",
+    "Rico": False,
+    "Filmes Favoritos" : "Harry Potter"
+}
 
 #print(dicionario["Nome"])
 #print(dicionario.get("Nome"))
@@ -28,8 +28,8 @@
 #del dicionario
 #dicionario2 = dicionario.copy()
 #dicionario3 = dict(dicionario)
-# for itens in dicionario:
-#     print(itens)
+for itens in dicionario:
+     print(itens)
 # for itens in dicionario.items():
 #     print(itens)
 # for itens in dicionario.values():
