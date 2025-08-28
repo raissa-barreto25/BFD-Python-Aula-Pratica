@@ -45,4 +45,36 @@ for i in valores:
 print(f"O resultado da soma dos valores {valores} é: {result}!")
 
 # Questão 10
+notas = []  
 
+print("Digite as 3 notas do aluno 1:")
+n1 = float(input("Nota 1: "))
+n2 = float(input("Nota 2: "))
+n3 = float(input("Nota 3: "))
+notas.append([n1, n2, n3])  
+
+print("\nDigite as 3 notas do aluno 2:")
+n1 = float(input("Nota 1: "))
+n2 = float(input("Nota 2: "))
+n3 = float(input("Nota 3: "))
+notas.append([n1, n2, n3])  
+print("\nNotas armazenadas:", notas)
+
+media1 = sum(notas[0]) / 3
+media2 = sum(notas[1]) / 3
+
+print(f"Média do aluno 1: {media1:.2f}")
+print(f"Média do aluno 2: {media2:.2f}")
+
+# Questão 11
+import numpy as np
+
+tabuleiro = [["[ ]" for _ in range(8)] for _ in range(8)]
+pecas = ["tor", "cav", "bis", "rai", "rei", "bis", "cav", "tor"]
+tabuleiro[0] = pecas
+tabuleiro[1] = ["pea"] * 8
+tabuleiro[6] = ["pea"] * 8
+tabuleiro[7] = pecas
+tabuleiro_np = np.array(tabuleiro)
+
+print(tabuleiro_np)
