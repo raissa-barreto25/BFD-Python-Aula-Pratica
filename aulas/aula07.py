@@ -72,6 +72,7 @@
 #    return f"Ola, {nome} {sobrenome}! Tudo bem?" 
 
 # print(saudacao())
+# print(saudacao(sobrenome="Favaro"))
 # print(saudacao("Fred","Favaro"))
 
 # def soma(num1,num2): 
@@ -81,3 +82,28 @@
 
 # resultado = soma(5+3)
 # print(resultado)
+
+# def soma(num1,num2): 
+#     return num1 + num2
+# def multiplicacao(num1,num2):
+#     return num1 * num2
+# operacao = multiplicacao(soma(3,2), soma(5,8))
+# print(operacao)
+
+# def calculadora(num1,num2):
+#     soma = num1+num2
+
+#     return num1, num2, soma
+# resultado = calculadora(2,4)
+# print(f"A soma de {resultado[0]} + {resultado[1]} é igual a {resultado[2]}")
+
+# def soma(*args):
+#     resultado = 0
+#     for num in args:
+#         resultado += num
+#     return resultado
+# print(soma(3,4,5,6,7,1,3))
+
+# def usuario(**kwargs):
+#     for chave, valor in kwargs.items():
+#         print(f"")
