@@ -76,12 +76,20 @@
 #     print("Fim do programa")
 
 # Questão 09
-class SaldoInsuficienteError(Exception):
-    pass
 def sacar(saldo, valor):
-    if valor > saldo:
-        raise SaldoInsuficienteError("Saldo Insuficiente.")
-    else:
-        return f"Seu saldo é {saldo}"
-try:
-    valor = int(input("Digite um valor"))
+    class SaldoInsuficienteError(Exception):
+        pass
+    try:
+        if valor > saldo:
+            raise SaldoInsuficienteError("Saldo Insuficiente.")
+        novo_saldo = saldo - valor
+        print(f"Valor retirado com sucesso! Novo saldo é {novo_saldo}")
+        return novo_saldo
+    except SaldoInsuficienteError:
+        print("Saldo insuficiente!")
+    except ValueError:
+        print("Erro: você deve digitar um número válido.")
+
+saldo_atual = 1000
+valor_saque = int(input("Digite o valor de retirada: "))
+sacar(saldo_atual, valor_saque)
