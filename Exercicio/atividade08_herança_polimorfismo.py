@@ -53,27 +53,29 @@
 # print(cliente1.saudacao())
 
 # Questão 04
-class Usuario:
-    def __init__ (self, nome, email):
-        self.nome = nome
-        self.email = email
+# class Usuario:
+#     def __init__ (self, nome, email):
+#         self.nome = nome
+#         self.email = email
 
-    def saudacao(self):
-        return "Olá, usuário"
+#     def saudacao(self):
+#         return "Olá, usuário"
 
-    def exibir_informacoes(self):
-        return f"Cliente de nome: {self.nome}, E-mail: {self.email}"
+#     def exibir_informacoes(self):
+#         return f"Cliente de nome: {self.nome}, E-mail: {self.email}"
 
-class Cliente(Usuario):
-    def __init__(self, nome, email, saldo):
-        super().__init__(nome, email)
-        self.saldo = saldo
+# class Cliente(Usuario):
+#     def __init__(self, nome, email, saldo):
+#         super().__init__(nome, email)
+#         self.saldo = saldo
 
-    def saudacao(self):
-        return f"Olá, Cliente"
+#     def saudacao(self):
+#         return f"Olá, Cliente"
     
 
-cliente1 = Cliente("Raíssa", "rrbsiilva@gmail.com", 500)
-print(cliente1.exibir_informacoes())
-print(cliente1.saudacao())
-print(f"Seu saldo é {cliente1.saldo}")
+# cliente1 = Cliente("Raíssa", "rrbsiilva@gmail.com", 500)
+# print(cliente1.exibir_informacoes())
+# print(cliente1.saudacao())
+# print(f"Seu saldo é {cliente1.saldo}")
+
+# Questão 05
