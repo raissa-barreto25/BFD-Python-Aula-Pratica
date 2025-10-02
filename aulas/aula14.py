@@ -93,3 +93,16 @@
 
 
 # Uma classe pode implementar várias interfaces(Heranças Multiplas), mas apenas
+
+
+# POO - S O L I D
+"""é um acrônimo mnemônico que relaciona um tópico de 
+boas práticas de programação a cada letra. 
+A aplicação desses princípios tem por objetivo deixar o 
+projeto mais coeso, reaproveitável e torna a sua manutenção 
+mais simples. Criado por Robert Cecil Martin (Manifesto Agil)
+S - Responsabilidade unica (Single Responsability)
+O - Principio aberto(para expanções)/fechado(Para modificações) (Open/Closed Principle)
+L - Principio da Substituição de Liskov (Liskov's Substituion Principle)
+I - Principio da Segregação de interfaces (Interface segregation)
+D - Principio da Inversão de Dependência (Dependency Inversion)"""
