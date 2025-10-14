@@ -48,7 +48,66 @@ class Funcionario:
         self.id = id
         self.funcao = funcao
 
+    def __str__(self):
+        return f"{self.nome} - {self.id} - {self.funcao}"
+
 class Departamento:
-    def __init__(self, area_atuacao, horario):
-        self.area_atuacao = area_atuacao
+    def __init__(self, empresa, horario):
+        self.empresa = empresa
         self.horario = horario
+        self.funcionario = []
+
+    def adicionar_funcionario(self, funcionario):
+        self.funcionario.append(funcionario)
+
+    def lista_funcionario(self):
+        print(f"Funcionario da empresa {self.empresa} no horário {self.horario}.")
+        for x in self.funcionario:
+            print(f" - {x}")
+
+f1 = Funcionario("Raíssa", "15", "Dev")
+f2 = Funcionario("Helton", "02", "Adm")
+
+empresa = Departamento("B4", "09h às 18h")
+
+empresa.adicionar_funcionario(f1)
+empresa.adicionar_funcionario(f2)
+
+empresa.lista_funcionario()
+
+# Questão 04
+
+class Jogador:
+    def __init__(self, nome, posicao):
+        self.nome = nome
+        self.posicao = posicao
+
+    def __str__(self):
+        return f"{self.nome} - {self.posicao}"
+
+class Time:
+    def __init__(self, clube):
+        self.clube = clube
+        self.jogadores = []
+
+    def adicionar_jogadores(self, jogador):
+        self.jogadores.append(jogador)
+
+    def lista_jogadores(self):
+        print(f"Jogadores do time {self.clube}")
+        for j in self.jogadores:
+            print(f" - {j}")
+
+jogador1 = Jogador("Pedro", "Goleiro")
+jogador2 = Jogador("Miguel", "Volante")
+jogador3 = Jogador("Arthur", "Atacante")
+
+time1 = Time("Juniores")
+
+time1.adicionar_jogadores(jogador1)
+time1.adicionar_jogadores(jogador2)
+time1.adicionar_jogadores(jogador3)
+
+time1.lista_jogadores()
+
+# Questão 05
