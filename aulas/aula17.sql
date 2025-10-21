@@ -34,8 +34,28 @@
 -- FROM Aluno
 -- WHERE nome IN ('Felipe Melo', 'João Pereira')
 
-SELECT nome
-FROM Aluno
-WHERE nome LIKE '%lipe%'
+-- SELECT nome
+-- FROM Aluno
+-- WHERE nome LIKE '%lipe%'
 
 -- Underline _ quantidade de caracter 
+
+
+-- JOIN SQL
+-- Left Join (Agrupa as informações priorizando a tabela da direita), Right Join(Agrupa as informações priorizando a tabela da esquerda), Inner Join (interseções comum das tabelas) e Full Join(pega todas as informações das tabelas)
+
+-- .schema Aluno
+-- INSERT INTO Aluno (nome, data_nascimento, id_turma)
+-- VALUES ('Fred', '1989-07-13','55');
+
+-- SELECT nome
+-- FROM Aluno;
+
+-- .schema Turma
+-- INSERT INTO Turma (nome, semestre, ano, id_turma)
+-- VALUES ('Geometria', '2', '2025', '55');
+
+-- SELECT *
+-- FROM Aluno
+-- RIGHT JOIN Turma
+-- ON id_turma = Turma.id
