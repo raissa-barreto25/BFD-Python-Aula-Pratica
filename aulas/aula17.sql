@@ -59,3 +59,10 @@
 -- FROM Aluno
 -- RIGHT JOIN Turma
 -- ON id_turma = Turma.id
+
+-- SELECT Aluno.nome, Turma.nome
+-- FROM Aluno
+-- FULL JOIN Turma
+-- ON id_turma = Turma.id
+
+-- Bibliotecas - SQLite3 (driver), SQL ALQUEMY(converte tudo para POO para salvar no banco e o contrario tbm)
