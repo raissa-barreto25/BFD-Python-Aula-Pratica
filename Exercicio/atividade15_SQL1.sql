@@ -56,3 +56,6 @@
 -- SELECT nome, mensalidade
 -- FROM Curso
 -- ORDER BY mensalidade DESC;
+
+SELECT * 
+FROM Turma;
