@@ -44,7 +44,7 @@ cursor.execute("""
                SELECT *
                FROM Aluno
                LEFT JOIN Turma
-               ON nome = Turma.nome
-               WHERE nome = "Turma B"
+               ON id_turma = Turma.id
+               WHERE Turma.nome LIKE "Turma B %"
                """)
 print(cursor.fetchall())
