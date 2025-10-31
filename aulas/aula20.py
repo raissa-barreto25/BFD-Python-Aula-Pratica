@@ -1,7 +1,9 @@
 import pymongo
+import os
+import dotenv
 
 # cliente = pymongo.MongoClient("mongodb://localhost:27017/")
-cliente = pymongo.MongoClient()
+cliente = pymongo.MongoClient(os.getenv("MONGO_TOKEN"))
 print(cliente)
 
 
