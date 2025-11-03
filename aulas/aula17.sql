@@ -1,3 +1,72 @@
+/*
+aula de SQL Turma 36
+usando SQlite
+*/
+
+-- comando para listar as tabelas
+-- .tables
+
+-- mostra o codigo SQL de criação da tabela
+-- .schema Aluno
+
+-- * significa selecionar tudo da tabela
+-- query para acessar todas as colunas da tabela aluno
+-- SELECT *
+-- FROM Aluno;
+
+-- SELECT nome
+-- FROM Aluno;
+
+-- SELECT 
+--     nome, 
+--     nota1, 
+--     nota2
+-- FROM Aluno;
+
+-- SELECT nome, nota1
+-- FROM Aluno
+-- WHERE nota1 >= 7;
+
+-- SELECT nome, nota1, nota2
+-- FROM Aluno
+-- WHERE nota1 >= 7 OR nota2 >= 7;
+
+-- SELECT
+--     nome,
+--     nota1,
+--     nota2,
+--     (nota1+nota2)/2 AS Media
+-- FROM Aluno;
+
+-- SELECT
+--     nome nome_aluno,
+--     nota1,
+--     nota2,
+--     (nota1+nota2)/2 AS Media
+-- FROM Aluno
+-- ORDER BY Media;
+
+-- SELECT
+--     nome nome_aluno,
+--     nota1,
+--     nota2,
+--     (nota1+nota2)/2 AS Media
+-- FROM Aluno
+-- ORDER BY Media DESC;
+
+-- SELECT
+--     nome nome_aluno,
+--     nota1,
+--     nota2,
+--     (nota1+nota2)/2 AS Media
+-- FROM Aluno
+-- ORDER BY Media DESC
+-- LIMIT 10;
+
+SELECT id_turma
+FROM Aluno
+GROUP BY id_turma;
+
 -- w3schools.com 
 -- SELECT para pegar as colunas de uma lista 
 -- Comando para listar as tabelas do BD .tables
