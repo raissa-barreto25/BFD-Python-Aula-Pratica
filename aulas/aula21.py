@@ -1,5 +1,5 @@
 import pymongo
-import dotenv
+#import dotenv
 
 cliente = pymongo.MongoClient()
 
