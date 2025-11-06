@@ -1,7 +1,7 @@
 import pymongo
 import dotenv
 
-cliente = pymongo.MongoClient("mongodb+srv://rrbsiilva_db_user:Hr%40291016@cluster0.6alfy2x.mongodb.net/?appName=Cluster0")
+cliente = pymongo.MongoClient()
 
 lojinha = cliente["lojinhadb"]
 
